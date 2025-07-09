@@ -1,0 +1,41 @@
+make object name same as the key name while importing 
+
+    
+ date convert krti h in utc format
+ you cant export more than one function from a file 
+ as an object we can export more than one using keys and values
+
+
+const {formatDate} = require("./Helper/date-convertor.js")
+
+two types in fs (to read and write in a file )->
+1. sync  - blockd operations (read)
+2. async - non - blocked operations (write)
+
+
+1
+2
+null
+void
+-->this will be printed beacause this is async funtion , and jitne bhi ye functions hote h ye main thread pe run nhi hote 
+alag stack me run hote h (web api ) and result is thrown in main stack.
+
+
+callback is present in async
+
+async function ka callback function tabhi run hoga jb call stcak usko empty milega in main stack. 
+
+
+NODE JS EVENT CYCLE ->
+1. req is send from postman or from frontend(client)
+2. res is send in respect to every req (one res for one req)(no res is also valid)
+3. event queue principle -> FIFO is followed 
+4. event loop 
+5. workers are the threads that perform tasks and functions requested by api req 
+
+non blocking honi chiye requests 
+callback functions sare async hone chaiye 
+
+1. event queue checking for requests 
+2. categorising req into blocking and non blocking 
+3. if non blocking then only check thread for avalability 
