@@ -23,9 +23,10 @@ const result = fs.writeFileSync("./text2.txt","helo world!!!");         // this 
 console.log(result);
 console.log("2");
 
-fs.readFile("./text.txt","utf-8",(err,data)=>{        // async
-    console.log("async -> ",data);
-})
+// >>=> READ FILE 
+// fs.readFile("./text.txt","utf-8",(err,data)=>{        // async
+//     console.log("async -> ",data);
+// })
 
 // const data = fs.readFileSync("./text.txt","utf-8");  // sync 
 // console.log("sync -> ", data)
