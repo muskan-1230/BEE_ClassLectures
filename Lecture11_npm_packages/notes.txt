@@ -1,0 +1,18 @@
+-> these are the global code which are free to use in our project
+-> we dont have to write the code , just install, import and use
+
+uses:
+-> we can share code + functionalities globally with other 
+-> can act as common point for both "FE" and "BE"
+    share/use same function in both fe and be 
+
+
+
+#otp generator -> one parameter i.e length of otp
+example :- 
+otpGenerator(4) -> this will return 4 digit otp in string 
+
+
+#otpVerify -> one parameter i.e otp (in string)
+example :-
+verifyOtp("0421")-> this will return true or false
