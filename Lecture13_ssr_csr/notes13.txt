@@ -1,0 +1,16 @@
+SSR VS CSR ->
+
+RENDERING :
+
+CSR->  { client side rendering }
+send req to backend for data,
+manipulate data (Dom || React) to show UI,
+backend and frontend are both different.
+
+SSR-> { server side rendering }
+browser send req to get the HTML file,
+manipulation is done on backend,
+backend serves the UI.
+
+
+AXIOS -> send api req , frontend se backend ko req send krna h to axios use hota h like fetch but improved , provides easy syntax for fetch 
